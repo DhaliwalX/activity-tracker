@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <com.princedhaliwal.activitytracker.MyTextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/friend_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Steps"
+                    android:textAlignment="center" />
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/friend_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:allowUndo="true"
+                    android:alpha="0.5"
+                    android:fontFamily="avenir"
+                    android:text="@string/default_step_count"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                >
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textAlignment="center" />
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/friend_calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:allowUndo="true"
+                    android:alpha="0.5"
+                    android:fontFamily="avenir"
+                    android:text="@string/default_step_count"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="40sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calories"
+                    android:textAlignment="center" />
+
+                <com.princedhaliwal.activitytracker.MyTextView
+                    android:id="@+id/friend_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:allowUndo="true"
+                    android:alpha="0.5"
+                    android:fontFamily="avenir"
+                    android:text="@string/default_step_count"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "796417727411",
+    "project_id": "activitytracker-184407"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796417727411:android:c0e68c151989d80b",
+        "android_client_info": {
+          "package_name": "com.princedhaliwal.activitytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796417727411-ggq5h729ov4oma7flbpajs1qlbnpjgrg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.princedhaliwal.activitytracker",
+            "certificate_hash": "e4b6cccf62802eaebb2e317ea57fbf42d84033af"
+          }
+        },
+        {
+          "client_id": "796417727411-ksb8modb12fjshs0flnvceus6denrpdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyZp5mjnfnGFjD5nqom83sqv4bfssuUKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

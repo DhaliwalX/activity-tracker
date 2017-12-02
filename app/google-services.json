@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "977561682186",
+    "firebase_url": "https://activitytracker-59c4f.firebaseio.com",
+    "project_id": "activitytracker-59c4f",
+    "storage_bucket": "activitytracker-59c4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977561682186:android:c0e68c151989d80b",
+        "android_client_info": {
+          "package_name": "com.princedhaliwal.activitytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977561682186-lkils1so020c9f75impte091911tfghk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.princedhaliwal.activitytracker",
+            "certificate_hash": "c8443d2af8479dd21528a777e75b60e441b39f23"
+          }
+        },
+        {
+          "client_id": "977561682186-gqr27botqoe9keqetnplssl712ceao9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqRr8exN00kvBG3ny1qVW5C3XWdb_53rc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977561682186-gqr27botqoe9keqetnplssl712ceao9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

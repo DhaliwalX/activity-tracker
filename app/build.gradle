@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.princedhaliwal.activitytracker"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile('com.google.api-client:google-api-client-android:1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+        exclude group: 'com.google.code.findbugs'
+    }
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.google.android.gms:play-services-fitness:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'pub.devrel:easypermissions:0.3.0'
+    compile 'com.mcxiaoke.volley:library:+'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    compile "com.android.support:support-dynamic-animation:+"
+    testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("support-dynamic-animation")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
+
+
+
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}
